@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      List of Songs
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div class="list-container">
+  
+    <ion-header >
+      
+        <ion-title size="small" style="background-color:darkblue; color:white;">Reorder these songs from your most favorite to least favorite</ion-title>
+      
+    </ion-header>
+
+  
+    <ion-list>
+      <ion-reorder-group (ionItemReorder)="reordering($event)" disabled="false">
+        <ion-item *ngFor="let song of songs">
+          <ion-label>
+                  <strong>Song:</strong><br> {{song[0]}} <br>
+                  <strong>Artist:</strong><br> {{song[1]}}
+                  <ion-reorder></ion-reorder>  
+          </ion-label>
+        </ion-item>
+      </ion-reorder-group>
+    </ion-list>
+
+  </div> 
+
+</ion-content>

@@ -1,0 +1,71 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Books
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Books</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <!--Cards-->
+
+<ion-grid>
+<ion-row>
+<ion-col size="6">
+
+  <ion-card color="primary">
+
+    <ion-card-header>
+      <ion-card-title> The Great Gatsby</ion-card-title>
+      <ion-card-subtitle>By F Scott Fitzgerald</ion-card-subtitle>  
+    </ion-card-header>
+
+    <!-- Place your image here -->
+    <ion-img src="https://skyhorse-us.imgix.net/covers/9781949846430.jpg?auto=format&w=298" alt="Image Description" class="book-covers"></ion-img>
+
+    <ion-card-content>
+      <b>Synopsis</b> <br>
+      The Great Gatsby is an American classic following Jay Gatsby's quest to win back his long-lost love by faking a successful life, depicting the struggles around love, relationships, societal standing, and consumerism of people in the “roaring” 1920s
+    </ion-card-content>
+
+    <ion-item>
+      <ion-icon name="book" slot="start"></ion-icon>
+      <ion-label>Genre: Classic Novels</ion-label>
+    </ion-item>
+
+  </ion-card>
+
+</ion-col>
+
+<ion-col size="6">
+  <ion-card color="primary">
+
+    <ion-card-header>
+      <ion-card-title> 1984</ion-card-title>
+      <ion-card-subtitle>By George Orwell</ion-card-subtitle>  
+    </ion-card-header>
+
+    <!-- Place your image here -->
+    <ion-img src="https://skyhorse-us.imgix.net/covers/9781631582219.jpg?auto=format&w=298" alt="Image Description" class="book-covers"></ion-img>
+
+    <ion-card-content>
+      <b>Synopsis</b> <br>
+      1984 is a dystopian novella by George Orwell published in 1949, which follows the life of Winston Smith, a low ranking member of 'the Party', who is frustrated by the omnipresent eyes of the party, and its ominous ruler Big Brother. 'Big Brother' controls every aspect of people's lives
+    </ion-card-content>
+
+    <ion-item>
+      <ion-icon name="book" slot="start"></ion-icon>
+      <ion-label>Genre: Classic Novels</ion-label>
+    </ion-item>
+
+  </ion-card>
+</ion-col>
+</ion-row>
+</ion-grid>
+</ion-content>
